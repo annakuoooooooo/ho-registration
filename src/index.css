@@ -1,0 +1,27 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #F4F2EF;
+  --surface:   #FFFFFF;
+  --ink:       #1A1816;
+  --ink2:      #7A746E;
+  --ink3:      #B0A89F;
+  --mint:      #2A8A7E;
+  --mint-dim:  #E6F2F1;
+  --amber:     #9A6820;
+  --line:      #E6E2DC;
+  --err:       #A63225;
+  --shadow:    0 2px 8px rgba(26,24,22,0.05), 0 8px 36px rgba(26,24,22,0.10);
+}
+
+html { -webkit-font-smoothing: antialiased; }
+
+body {
+  background: var(--bg);
+  font-family: 'Noto Sans TC', sans-serif;
+  color: var(--ink);
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+button { cursor: pointer; }
