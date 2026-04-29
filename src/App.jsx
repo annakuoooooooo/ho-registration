@@ -3,7 +3,7 @@ import { db } from './firebase'
 import { collection, addDoc, onSnapshot, query, orderBy, serverTimestamp } from 'firebase/firestore'
 
 const ADMIN_PW = 'annakuooo'
-const COLLECTION = 'ho_tlc_2025'
+const COLLECTION = 'ho_tlc_2026'
 
 export default function App() {
   const [tab, setTab] = useState('form')
@@ -112,7 +112,7 @@ export default function App() {
         <div style={S.hdrAccent} />
         <div style={S.eyebrow}><span style={{ color: 'var(--mint)' }}>HO</span> · 座位登記</div>
         <div style={S.hdrTitle}>台灣領導者大會</div>
-        <div style={S.hdrYear}>2025</div>
+        <div style={S.hdrYear}>2026</div>
         <div style={S.hdrRule} />
         <div style={S.hdrMeta}>
           {[['日期', '5 / 23 — 5 / 24'], ['地點', '南港展覽館'], ['組別', 'HO']].map(([l, v]) => (
@@ -261,7 +261,7 @@ export default function App() {
               <div style={S.adminHeader}>
                 <div>
                   <div style={S.secLabel}>HO 組 · 即時名單</div>
-                  <div style={{ fontFamily: '"Cormorant Garamond", serif', fontSize: 30, fontWeight: 400 }}>台灣領導者大會 2025</div>
+                  <div style={{ fontFamily: '"Cormorant Garamond", serif', fontSize: 30, fontWeight: 400 }}>台灣領導者大會 2026</div>
                   {lastUpdate && <div style={{ fontSize: 11, color: 'var(--ink3)', marginTop: 6 }}>最後更新 {lastUpdate}</div>}
                 </div>
                 <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
